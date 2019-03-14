@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#ffcccccc</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_1">#f9f9f9</color>
+
+    <color name="immersion">#FF18B4ED</color>
+
+    <color name="check_table_name">#333333</color>
+    <color name="check_item_name">#ff666666</color>
+    <color name="check_item_unselect_bg">#b6b6b6</color>
+    <color name="check_item_selected_bg">#25AE5E</color>
+    <color name="check_item_select_text">#FFFFFF</color>
+
+    <color name="bottom_nagivation_text_selected">#CCCCCC</color>
+    <color name="bottom_nagivation_text_unselect">#25AE5E</color>
+
+    <color name="color_f6">#f6f6f6</color>
+
+    <color name="btn_green">#65C15C</color>
+    <color name="background">#f0f2ef</color>
+    <color name="text_bottom_normal">#8E9098</color>
+    <color name="text_bottom_press">#113C78</color>
+    <color name="text_service_normal">#929292</color>
+    <color name="text_service_press">#0C296C</color>
+    <color name="text_service_search">#AAAAAA</color>
+    <color name="line_divider">#E5E5E5</color>
+    <color name="text_tab_normal">#333333</color>
+    <color name="text_tab_select">#464C56</color>
+    <color name="text_home">#000A1A</color>
+    <color name="text_home_999999">#999999</color>
+    <color name="text_3F4552">#3F4552</color>
+    <color name="text_163A8F">#163A8F</color>
+    <color name="text_666666">#666666</color>
+    <color name="text_C4C5C7">#C4C5C7</color>
+    <color name="text_333333">#333333</color>
+
+    <!-- QRCode scanner color begin -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#B0000000</color>
+    <color name="viewfinder_frame">#90FFFFFF</color>
+    <color name="result_point_color">#C0FFFF00</color>
+    <color name="laser_color">#0F0</color>
+    <color name="corner_color">#00FF00</color>
+    <!-- QRCode scanner color end -->
+
+
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+
+    <!--<color name="white">#ffffff</color>-->
+    <color name="backgroundgray">#eeeeee</color>
+    <color name="titleWhite">#f5f5f5</color>
+    <color name="titleBlue">#0096FF</color>
+    <color name="titleBlue2">#0195FF</color>
+    <color name="textBlue">#324d82</color>
+    <color name="textBlueLight">#23a4ff</color>
+    <color name="bggreen">#52c6ff</color>
+    <color name="bgYellow">#ffb952</color>
+    <color name="greenlight">#79ca05</color>
+    <color name="greenlight2">#a6e34e</color>
+    <color name="appTextBlue">#04A8F7</color>
+    <color name="appTextGray">#888888</color>
+    <color name="blackalpha">#cc000000</color>
+    <color name="whiteShallow">#fdfdfd</color>
+    <color name="whiteGary">#f2f2f2</color>
+    <color name="whiteTxtBg">#f9f9f9</color>
+    <color name="redText">#cbf47f6a</color>
+    <color name="redBorder">#ff3433</color>
+    <color name="redSelect">#E84A4A</color>
+    <color name="blueName">#576b95</color>
+    <color name="blueText">#597bba</color>
+    <color name="black">#ff000000</color>
+    <color name="blacktext">#1c1c1c</color>
+    <color name="oldGray">#505050</color>
+    <color name="old2Gray">#3f3f3f</color>
+    <color name="titleBlack">#3e3e3e</color>
+    <color name="textBlack">#202020</color>
+    <color name="contentBlack">#444444</color>
+    <color name="examBgBlue">#CDE5FF</color>
+    <color name="textRed">#ff4e3c</color>
+    <color name="commentBlack">#5d5d5d</color>
+    <color name="grayAction">#e1e1e1</color>
+    <color name="grayText">#aaaaaa</color>
+    <color name="newgrayText">#52c7f3</color>
+    <color name="grayA">#aaaaaa</color>
+    <color name="grayText2">#8f8f8f</color>
+    <color name="grayText3">#757575</color>
+    <color name="grayLine">#b4b4b4</color>
+    <color name="grayLine2">#dedede</color>
+    <color name="lightBlue1">#00a2ff</color>
+    <color name="lightBlue2">#008ee0</color>
+    <color name="lightBlue3">#036eac</color>
+    <color name="brownBlack">#3E4B54</color>
+    <color name="other">#fff00f</color>
+    <color name="blue">#0000FF</color>
+    <color name="lightBlueDark">#00436a</color>
+    <color name="garyClickBg">#f3f3f3</color>
+    <color name="grayBlack">#6b6b6b</color>
+    <color name="grayBlack2">#a9a9a9</color>
+    <color name="grayBlack3">#bebebe</color>
+    <color name="garyTrigon">#dadada</color>
+    <color name="garyLight">#d4d4d4</color>
+    <color name="garyLight2">#e3e3e3</color>
+    <color name="garyLight3">#e9e9e9</color>
+    <color name="garyLight4">#e6e6e6</color>
+    <color name="garyLight5">#f8f8f8</color>
+    <color name="transparent">#00000000</color>
+    <color name="mask">#90000000</color>
+    <color name="maskLight">#70000000</color>
+    <color name="deepBlue">#0082db</color>
+    <color name="deepBlue2">#006ab3</color>
+    <color name="drakBlue">#41598a</color>
+    <color name="wheelBlue">#3598da</color>
+    <color name="wheelBlue_press">#1c4a68</color>
+
+    <color name="border_danxiang">#ff6b57</color>
+    <color name="border_duoxuan">#57d2ff</color>
+    <color name="border_budingxiang">#ffb657</color>
+    <color name="border_panduan">#1e83ff</color>
+    <color name="border_tiankong">#ed49d8</color>
+    <color name="border_zhuguang">#57ffc6</color>
+    <color name="examcardblue">#55baff</color>
+    <color name="mooc_index_gray">#717171</color>
+    <color name="mooc_index_alphe">#bb000000</color>
+    <color name="mooc_index_alphe2">#77000000</color>
+    <color name="mooc_index_dirgray">#d9d9d9</color>
+    <color name="mooc_index_appheblack">#cc000000</color>
+    <color name="yellowBotton">#ff8400</color>
+    <color name="yellowBotton2">#ff6600</color>
+
+    <color name="gray">#808080</color>
+    <color name="red">#ff0000</color>
+    <color name="redNewMsg">#f43531</color>
+
+    <color name="lightGray">#BFBFBF</color>
+    <color name="unfocused">#cccccccc</color>
+    <color name="pressed">#fff22fff</color>
+    <color name="selected">#fff33fff</color>
+    <color name="focused">#ffff44ff</color>
+
+
+    <color name="none_color">#00000000</color>
+    <color name="yancy_green500">#259b24</color>
+    <color name="yancy_green600">#0a8f08</color>
+    <color name="yancy_green700">#0a7e07</color>
+    <color name="yancy_green800">#056f00</color>
+    <color name="yancy_background">#181819</color>
+    <color name="dark_gray">#FF343535</color>
+    <color name="text_gray">#FF999999</color>
+    <color name="photo_mask">#88000000</color>
+    <color name="separation">#FFDCDCDC</color>
+    <color name="text_black">#FF333333</color>
+
+    <color name="backgroundBlue">#04A8F7</color>
+
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="text_product_failed">#FF5E53</color>
+    <color name="text_product_through">#13BDA2</color>
+
+    <color name="text_input_key">#333333</color>
+    <color name="text_input_value">#666666</color>
+    <color name="text_title_bold">#ff000000</color>
+
+    <color name="color_ff333333">#ff333333</color>
+    <color name="color_ff666666">#ff666666</color>
+
+</resources>

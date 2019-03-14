@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/bg_site_check_table_item"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_ent_marker" />
+
+        <TextView
+            android:id="@+id/tv_object"
+            style="@style/text_title_2"
+            android:layout_width="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="不合格"
+            android:textSize="18sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/line_divider"></View>
+
+    <LinearLayout
+        android:id="@+id/layout_regulator"
+        style="@style/text_content_layout">
+
+        <TextView
+            style="@style/object_details_key"
+            android:text="检查人：" />
+
+        <TextView
+            android:id="@+id/tv_regulator"
+            style="@style/object_details_value" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/text_content_layout">
+
+        <TextView
+            style="@style/object_details_key"
+            android:text="@string/regulate_date_1" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            style="@style/object_details_value" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/text_content_layout">
+
+        <TextView
+            style="@style/object_details_key"
+            android:text="@string/regulate_opinion_1" />
+
+        <TextView
+            android:id="@+id/tv_opinoin"
+            style="@style/object_details_value" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/text_content_layout">
+
+        <TextView
+            android:id="@+id/tv_items"
+            style="@style/object_details_value" />
+    </LinearLayout>
+
+</LinearLayout>

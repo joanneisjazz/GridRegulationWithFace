@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/toobar_layout"></include>
+
+    <LinearLayout style="@style/personal_info_layout">
+
+        <TextView
+            style="@style/text_personal_info"
+            android:text="用户名" />
+
+        <EditText
+            android:id="@+id/edt_login_name"
+            style="@style/edt_personal_info"
+            android:hint="请输入用户名" />
+    </LinearLayout>
+
+    <View style="@style/line_divider" />
+
+    <LinearLayout style="@style/personal_info_layout">
+
+        <TextView
+            style="@style/text_personal_info"
+            android:text="监管员姓名" />
+
+        <EditText
+            android:id="@+id/edt_regulator_name"
+            style="@style/edt_personal_info" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_divider"></View>
+
+    <LinearLayout style="@style/personal_info_layout">
+
+        <TextView
+            style="@style/text_personal_info"
+            android:text="电话" />
+
+        <EditText
+            android:id="@+id/edt_phone"
+            style="@style/edt_personal_info" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_divider"></View>
+
+    <LinearLayout
+        android:id="@+id/layout_date"
+        style="@style/personal_info_layout">
+
+        <TextView
+            style="@style/text_personal_info"
+            android:text="邮箱" />
+
+
+        <EditText
+            android:id="@+id/edt_email"
+            style="@style/edt_personal_info" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_divider"></View>
+
+    <LinearLayout
+        android:id="@+id/layout_site"
+        style="@style/personal_info_layout">
+
+        <TextView
+            style="@style/text_personal_info"
+            android:text="单位" />
+
+        <EditText
+            android:id="@+id/edt_org"
+            style="@style/edt_personal_info" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_photo"
+        style="@style/personal_info_layout">
+
+        <TextView
+            style="@style/text_personal_info"
+            android:layout_gravity="center_vertical"
+            android:text="照片认证" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_photo"
+                android:layout_width="56dp"
+                android:layout_height="64dp"
+                android:src="@mipmap/ic_no_photo" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_photo"
+                android:layout_centerHorizontal="true"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

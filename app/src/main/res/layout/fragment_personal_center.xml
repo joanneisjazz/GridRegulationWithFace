@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/layout_personal_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@mipmap/ic_person_marker" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_photo"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/iv_photo"
+            android:text="@string/personal_info"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_login_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_photo"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/iv_photo"
+            android:text="@string/personal_info"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@mipmap/more" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_personal_regulate_records"
+        style="@style/personal_center_layout"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            style="@style/personal_center_image"
+            android:background="@mipmap/ic_regulate_record_marker" />
+
+        <TextView
+            style="@style/personal_center_text"
+            android:text="@string/regulate_records" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/more" />
+    </LinearLayout>
+
+    <View style="@style/line_divider" />
+
+    <LinearLayout
+        android:id="@+id/layout_personal_reporte_records"
+        style="@style/personal_center_layout">
+
+        <ImageView
+            style="@style/personal_center_image"
+            android:background="@mipmap/ic_reporte_record_marker" />
+
+        <TextView
+            style="@style/personal_center_text"
+            android:text="@string/reporte_records" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/more" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_setting"
+        style="@style/personal_center_layout"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            style="@style/personal_center_image"
+            android:background="@mipmap/ic_setting_marker" />
+
+        <TextView
+            style="@style/personal_center_text"
+            android:text="@string/setting" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/more" />
+    </LinearLayout>
+</LinearLayout>

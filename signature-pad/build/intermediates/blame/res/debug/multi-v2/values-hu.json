@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\grid\\a\\GridRegulationWithFace\\signature-pad\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hu\\values-hu.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\dyy42\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\ff4f36cfe9362c662f06af355ee56657\\res\\values-hu\\values-hu.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\grid\\a\\GridRegulationWithFace\\signature-pad\\build\\intermediates\\res\\merged\\debug\\values-hu\\values-hu.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\dyy42\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\ff4f36cfe9362c662f06af355ee56657\\res\\values-hu\\values-hu.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

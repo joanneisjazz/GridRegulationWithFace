@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/toobar_layout"></include>
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/check_table_name"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="表1"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/line_divider"
+            android:visibility="gone"></View>
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/check_item_name"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="检查项1" />
+
+        <TextView
+            android:id="@+id/tv_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:autoLink="all"
+            android:text="@string/check_method"
+            android:textColor="#65C15C"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_margin="15dp"
+            android:background="@color/line_divider"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_qualified"
+                    style="@style/check_item_result"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="3"
+                    android:text="@string/qualified" />
+
+                <TextView
+                    android:id="@+id/tv_basic_qualified"
+
+                    style="@style/check_item_result"
+                    android:layout_weight="4"
+                    android:text="@string/basic_qualified" />
+
+                <TextView
+                    android:id="@+id/tv_unqualified"
+                    style="@style/check_item_result"
+                    android:layout_weight="3"
+                    android:text="@string/unqualified" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="请输入不合格的原因"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edt_reason"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/edt_unqualified_stroke"
+                android:gravity="start"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:text="@string/regulate_pictures"
+            android:textSize="18sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_pictures"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp" />
+    </LinearLayout>
+</LinearLayout>

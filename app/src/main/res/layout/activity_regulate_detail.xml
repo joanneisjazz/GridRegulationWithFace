@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/toobar_layout"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/text_input_layout">
+
+                <TextView
+                    style="@style/text_input_key"
+                    android:text="@string/object_name" />
+
+                <TextView
+                    android:id="@+id/tv_object_name"
+                    style="@style/text_input_value_tv_1" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_divider"></View>
+
+            <LinearLayout style="@style/text_input_layout">
+
+                <TextView
+                    style="@style/text_input_key"
+                    android:text="@string/regulate_date" />
+
+                <TextView
+                    android:id="@+id/tv_regulate_date"
+                    style="@style/text_input_value_tv_1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_divider"></View>
+
+            <LinearLayout
+                android:id="@+id/layout_regulator"
+                style="@style/text_input_layout"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/text_input_key"
+                    android:text="@string/regulator_name" />
+
+                <TextView
+                    android:id="@+id/tv_regulator"
+                    style="@style/text_input_value_tv_1" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line_layout_regulator"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_divider"
+                android:visibility="gone"></View>
+
+            <LinearLayout
+                android:id="@+id/layout_result"
+                style="@style/text_input_layout">
+
+                <TextView
+                    style="@style/text_input_key"
+                    android:text="@string/regulate_result" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/more" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_divider"></View>
+
+            <LinearLayout
+                android:id="@+id/layout_pdf"
+                style="@style/text_input_layout">
+
+                <TextView
+                    style="@style/text_input_key"
+                    android:text="查看检查文件" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/more" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_divider"></View>
+
+            <LinearLayout
+                android:id="@+id/layout_opinion"
+                style="@style/text_input_layout">
+
+                <TextView
+                    style="@style/text_input_key"
+                    android:text="@string/regulate_opinion" />
+
+                <TextView
+                    android:id="@+id/tv_regulate_opinion"
+                    style="@style/text_input_value_tv_1" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:text="@string/regulate_pictures"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview_pictures"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:text="@string/regulator_sign"
+                android:textSize="18sp" />
+
+
+            <LinearLayout
+                android:id="@+id/layout_regulate_sign_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_regulator_sign_1"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/iv_regulator_sign_2"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginLeft="20dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:text="@string/object_sign"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/layout_object_sign_images"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/iv_object_sign_image"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

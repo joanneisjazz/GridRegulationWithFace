@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jstech.gridregulation">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_jianguan_2"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_jianguan_2"
+        android:supportsRtl="true"
+        android:testOnly="false"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="WKzpUT20oTB82TMKpQgsBMCZDwBeEWCp"></meta-data>
+        <!--56:8utCce8w7SfcQynnzsc3OQF8z4oTL58T-->
+        <!--218:KXsuvxdmS4caV3fTGtoqsGGlztWwLgvp-->
+        <!--47:dEpIKqwPrGaOxjxfpkPu1GUf3zvh8XRL-->
+        <!-- 配置APP ID -->
+        <meta-data
+            android:name="BUGLY_APPID"
+            android:value="e4454cd543" />
+        <!-- 配置APP版本号 -->
+        <meta-data
+            android:name="BUGLY_ENABLE_DEBUG"
+            android:value="true" />
+
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@style/AppTheme_NO"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask">
+
+        </activity>
+        <activity android:name=".activity.WorkDeskActivity"></activity>
+        <activity
+            android:name=".activity.SiteInspectionObjectMapActivity"
+            android:label="现场检查地图页面"></activity>
+        <activity android:name=".activity.SearchRegulateObjectActivity"></activity>
+
+        <activity
+            android:name=".activity.SiteActivity"
+            android:launchMode="singleTask">
+
+        </activity>
+        <activity
+            android:name=".activity.CheckTableSelect2Activity"
+            android:label="选择检查内容"></activity>
+        <activity
+            android:name=".activity.CheckTableSelectActivity"
+            android:label="选择检查表"></activity>
+
+        <activity
+            android:name=".activity.CheckItemSelectActivity"
+            android:label="选择检查项目"></activity>
+        <activity
+            android:name=".activity.SiteCheckActivity"
+            android:label="选择检查结果"></activity>
+        <activity
+            android:name=".activity.CheckMethodActivity"
+            android:label="查看检查方法"></activity>
+
+        <activity
+            android:name=".activity.SiteCheckUploadActivity"
+            android:label="检查结果"></activity>
+        <activity
+            android:name=".activity.SignatureActivity"
+            android:label="签名"></activity>
+
+        <activity
+            android:name=".activity.LauncherActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.CaseUploadActivity" />
+        <activity android:name=".activity.InputCaseDetailActivity"></activity>
+        <activity android:name=".activity.IlleagelCaseListActivity"></activity>
+        <activity android:name=".activity.IllegalCaseDetailActivity"></activity>
+        <activity android:name=".activity.PictureAvtivity"></activity>
+
+        <activity android:name=".activity.SettingActivity"></activity>
+        <activity android:name=".activity.RegulateListAvtivity"></activity>
+        <activity android:name=".activity.RegulateDetailActivity"></activity>
+        <activity android:name=".activity.PersonalInfoActivity"></activity>
+        <activity android:name=".activity.RegulateItemResultActivity"></activity>
+        <activity android:name=".activity.TestActivity"></activity>
+        <activity android:name=".activity.PdfActivity" />
+        <activity android:name=".activity.NotificationActivity" />
+        <activity android:name=".activity.CreditActivity" />
+        <activity android:name=".activity.RegulateObjectListActivity" />
+        <activity android:name=".activity.RegulateItemListActivity" />
+        <activity android:name=".activity.TakeFacePicActivity" />
+        <activity android:name=".activity.FaceValidateActivity" />
+        <activity android:name=".activity.UploadSiteCheckDataActivity" />
+
+        <activity
+            android:name=".activity.RegulateItemCheckActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.SiteListActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.SiteMapActivity"
+            android:launchMode="singleTask" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
+
+        <service
+            android:name=".service.GPSService"
+            android:enabled="true"
+            android:exported="true"></service>
+        <!--兼容7.x-->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.jstech.gridregulation.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service
+            android:name=".update.UpdateAppService"
+            android:enabled="true"></service>
+    </application>
+
+</manifest>

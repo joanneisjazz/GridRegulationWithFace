@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/bg_site_check_table_item"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/check_table_name"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:text="表1"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/line_divider"
+        android:visibility="gone"></View>
+
+    <TextView
+        android:id="@+id/tv_content"
+        style="@style/check_item_name"
+        android:layout_marginLeft="15dp"
+        android:text="检查项1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/line_divider"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_qualified"
+                style="@style/check_item_result"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="3"
+                android:text="@string/qualified" />
+
+            <TextView
+                android:id="@+id/tv_basic_qualified"
+
+                style="@style/check_item_result"
+                android:layout_weight="4"
+                android:text="@string/basic_qualified" />
+
+            <TextView
+                android:id="@+id/tv_unqualified"
+                style="@style/check_item_result"
+                android:layout_weight="3"
+                android:text="@string/unqualified" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:autoLink="all"
+            android:text="@string/check_method"
+            android:textColor="#65C15C"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_unqualified_reason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="不合格"
+        android:textColor="@color/red"
+        android:visibility="gone" />
+
+
+</LinearLayout>

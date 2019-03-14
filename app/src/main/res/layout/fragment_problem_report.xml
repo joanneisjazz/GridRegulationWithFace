@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/text_input_layout">
+
+                <TextView
+                    style="@style/text_input_key"
+                    android:text="上报人姓名" />
+
+                <EditText
+                    android:id="@+id/edt_reporter_name"
+                    style="@style/text_input_value_edt"
+                    android:hint="请输入姓名" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_divider"></View>
+
+            <LinearLayout style="@style/text_input_layout">
+
+                <TextView
+                    style="@style/text_input_key"
+                    android:text="上报人电话" />
+
+                <EditText
+                    android:id="@+id/edt_phone"
+                    style="@style/text_input_value_edt"
+                    android:hint="请输入手机号" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_error_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingLeft="50dp"
+                android:text="@string/phone_error"
+                android:textColor="@color/redNewMsg"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_divider"></View>
+
+            <LinearLayout
+                android:id="@+id/layout_date"
+                style="@style/text_input_layout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/redSelect"/>
+                <TextView
+                    style="@style/text_input_key"
+                    android:text="发生时间" />
+
+                <LinearLayout style="@style/text_input_layout_inner">
+
+                    <TextView
+                        android:id="@+id/tv_happen_date"
+                        style="@style/text_input_value_tv"
+                        android:text="请选择时间" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/more" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_divider"></View>
+
+            <LinearLayout
+                android:id="@+id/layout_site"
+                style="@style/text_input_layout">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/redSelect"/>
+                <TextView
+                    style="@style/text_input_key"
+                    android:text="发生地点" />
+
+                <LinearLayout style="@style/text_input_layout_inner">
+
+                    <TextView
+                        android:id="@+id/tv_happen_site"
+                        style="@style/text_input_value_tv"
+                        android:text="请选择地点" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/more" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_divider"></View>
+
+            <LinearLayout style="@style/text_input_layout">
+
+                <TextView
+                    style="@style/text_input_key"
+                    android:text="相关单位" />
+
+                <EditText
+                    android:id="@+id/edt_object"
+                    style="@style/text_input_value_edt"
+                    android:hint="请输入相关单位名称" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_divider"></View>
+
+            <LinearLayout
+                android:id="@+id/layout_details"
+                style="@style/text_input_layout">
+
+                <TextView
+                    style="@style/text_input_key"
+                    android:text="详细信息" />
+
+                <LinearLayout style="@style/text_input_layout_inner">
+
+                    <TextView
+                        android:id="@+id/tv_details"
+                        style="@style/text_input_value_tv" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/more" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    style="@style/object_details_value"
+                    android:text="上传图片" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview_pictures"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"></android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

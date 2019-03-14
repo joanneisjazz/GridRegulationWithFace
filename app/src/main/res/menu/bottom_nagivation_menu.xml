@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/site_regulate"
+        android:icon="@mipmap/ic_site_regulate"
+        android:title="@string/site_regulate"></item>
+    <item
+        android:id="@+id/problem_report"
+        android:icon="@mipmap/ic_report"
+        android:title="@string/safty_problem_report"></item>
+    <item
+        android:id="@+id/personal_center"
+        android:icon="@mipmap/ic_personal_center"
+        android:title="@string/personal_center"></item>
+</menu>

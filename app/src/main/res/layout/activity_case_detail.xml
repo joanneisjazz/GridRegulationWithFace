@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/toobar_layout"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/text_input_layout">
+
+                <TextView
+                    style="@style/text_key"
+                    android:text="相关单位" />
+
+                <TextView
+                    android:id="@+id/tv_object"
+                    style="@style/text_value" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_divider"></View>
+
+            <LinearLayout style="@style/text_input_layout">
+
+                <TextView
+                    style="@style/text_key"
+                    android:text="上报人姓名" />
+
+                <TextView
+                    android:id="@+id/tv_reporter_name"
+                    style="@style/text_value" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_divider"></View>
+
+            <LinearLayout style="@style/text_input_layout">
+
+                <TextView
+                    style="@style/text_key"
+                    android:text="上报人电话" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    style="@style/text_value" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_divider"></View>
+
+            <LinearLayout
+                android:id="@+id/layout_date"
+                style="@style/text_input_layout">
+
+                <TextView
+                    style="@style/text_key"
+                    android:text="发生时间" />
+
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    style="@style/text_value" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_divider"></View>
+
+            <LinearLayout
+                android:id="@+id/layout_site"
+                style="@style/text_input_layout">
+
+                <TextView
+                    style="@style/text_key"
+                    android:text="发生地点" />
+
+                <TextView
+                    android:id="@+id/tv_happen_site"
+                    style="@style/text_value" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_divider"></View>
+
+
+            <LinearLayout
+                android:id="@+id/layout_details"
+                style="@style/text_input_layout">
+
+                <TextView
+                    style="@style/text_key"
+                    android:text="详细信息" />
+
+
+                <TextView
+                    android:id="@+id/tv_details"
+                    style="@style/text_value" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="图片"
+                    android:textColor="@color/text_input_key"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview_pictures"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"></android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

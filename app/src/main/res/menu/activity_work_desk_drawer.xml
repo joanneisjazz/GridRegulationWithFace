@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_update"
+            android:icon="@mipmap/ic_update_marker"
+            android:title="更新数据" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@mipmap/ic_nav_help"
+            android:title="更新版本" />
+
+        <item
+            android:id="@+id/nav_clear"
+            android:icon="@mipmap/ic_nav_clear"
+            android:title="清除缓存" />
+        <item
+            android:id="@+id/nav_back"
+            android:icon="@mipmap/ic_nav_back"
+            android:title="退出" />
+
+
+    </group>
+
+</menu>

@@ -1,0 +1,67 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">监管通</string>
+    <string name="all_select">全选</string>
+    <string name="tip">提示</string>
+    <string name="init_failed">初始化失败</string>
+    <string name="permission_denied">权限错误</string>
+
+    <string name="confrim">确定</string>
+    <string name="cancel">取消</string>
+    <string name="save">保存</string>
+    <string name="qualified">合格</string>
+    <string name="basic_qualified">基本合格</string>
+    <string name="unqualified">不合格</string>
+    <string name="check_method">检查方法></string>
+    <string name="next">下一步</string>
+    <string name="crop_production">种植业</string>
+    <string name="animal_husbandry">畜牧业</string>
+    <string name="phone_error">请输入正确的手机号码</string>
+
+    <string name="unqualified_reason">不合格的原因:</string>
+
+    <string name="object_name">监管对象</string>
+    <string name="regulator_name">检查人</string>
+    <string name="regulate_date">检查日期</string>
+    <string name="regulate_opinion">检查意见</string>
+    <string name="regulate_date_1">检查日期：</string>
+    <string name="regulate_opinion_1">检查意见：</string>
+
+    <string name="regulate_pictures">检查图片</string>
+
+    <string name="edt_opinion">请输入检察意见</string>
+    <string name="regulator_sign">检查人签字</string>
+    <string name="object_sign">监管对象负责人签字</string>
+
+    <string name="sign">签字</string>
+    <string name="clear">清除</string>
+
+    <string name="site_regulate">现场检查</string>
+    <string name="safty_problem_report">案件上报</string>
+    <string name="personal_center">个人中心</string>
+
+    <string name="ent_count">监管对象数量：</string>
+
+    <string name="reporter_name">上报人姓名：</string>
+    <string name="reporter_phone">上报人电话：</string>
+    <string name="happen_date">案件发生日期：</string>
+    <string name="happen_site">案件发生地点：</string>
+    <string name="details">案件内容：</string>
+    <string name="store">农资门店</string>
+    <string name="production">生产经营主体</string>
+    <string name="regulate_result">检查结果</string>
+
+    <string name="personal_info">个人信息</string>
+    <string name="regulate_records">现场检查记录</string>
+    <string name="reporte_records">案件上报记录</string>
+    <string name="clear_cacha">清除缓存</string>
+    <string name="setting">设置</string>
+
+    <string name="exit">退出登录</string>
+
+    <string name="prompt_email">手机号</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in">登录</string>
+    <string name="error_invalid_email">请输入用户名或者手机号</string>
+    <string name="error_invalid_password">请输入密码</string>
+
+</resources>

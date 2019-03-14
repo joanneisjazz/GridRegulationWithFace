@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/toobar_layout"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/text_input_layout">
+
+                <TextView
+                    style="@style/text_input_key"
+                    android:text="@string/object_name" />
+
+                <TextView
+                    android:id="@+id/tv_object_name"
+                    style="@style/text_input_value_tv_1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_divider"></View>
+
+            <LinearLayout style="@style/text_input_layout">
+
+                <TextView
+                    style="@style/text_input_key"
+                    android:text="@string/regulator_name" />
+
+                <TextView
+                    android:id="@+id/tv_regulator_name"
+                    style="@style/text_input_value_tv_1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_divider"></View>
+
+            <LinearLayout style="@style/text_input_layout">
+
+                <TextView
+                    style="@style/text_input_key"
+                    android:text="@string/regulate_date" />
+
+                <TextView
+                    android:id="@+id/tv_regulate_date"
+                    style="@style/text_input_value_tv_1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_divider"></View>
+
+            <LinearLayout
+                android:id="@+id/layout_opinion"
+                style="@style/text_input_layout">
+
+                <TextView
+                    style="@style/text_input_key"
+                    android:text="@string/regulate_opinion" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="7"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_regulate_opinion"
+                        style="@style/text_input_value_tv" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/more" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:text="@string/regulate_pictures"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview_pictures"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:id="@+id/layout_regulate_sign"
+                style="@style/text_input_layout"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    style="@style/text_input_key"
+                    android:text="@string/regulator_sign" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/more" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_regulate_sign_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_regulator_sign_1"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="visible" />
+
+
+                <ImageView
+                    android:id="@+id/iv_regulator_sign_2"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_regulator_sign_more"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@mipmap/addimg_1x"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_object_sign"
+                style="@style/text_input_layout"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    style="@style/text_input_key"
+                    android:text="@string/object_sign" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/more" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_object_sign_images"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_object_sign_image"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
